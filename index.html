@@ -4,10 +4,33 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Phone as Webcam</title>
+    <meta name="apple-mobile-web-app-title" content="Phone as Webcam" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <header>
+      <button class="back">↑ Capture back</button>
+      <button class="front">↓ Capture front</button>
+      <button class="fullscreen">⬒ Full screen</button>
+    </header>
+    <main>
+      <video autoplay muted playsinline>
+        If you're seeing this, your browser probably doesn't support HTML video.
+        That also means you probably haven't updated your browser or device in a
+        few years, meaning you're an easy target for hacking. Update now.
+      </video>
+    </main>
+
+    <footer>
+      <p>Created with 📷️ by <a href="http://didier.cz/g">Didier Catz</a></p>
+    </footer>
+
+    <script type="module" src="/main.js" async defer></script>
   </body>
 </html>

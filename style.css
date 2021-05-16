@@ -1,8 +1,52 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+*,
+*:before,
+*:after {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -moz-osx-font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: grayscale;
+}
+
+:root {
+  --neutral: #e2e8f0;
+  --light: #f1f5f9;
+  --dark: #cbd5e1;
+  --text: #0f172a;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+}
+
+header {
+  padding: 0.5rem;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+}
+
+button,
+video {
+  all: unset;
+  background: var(--neutral);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  /* margin-right: 0.25rem; */
+  /* margin-bottom: 0.25rem; */
+  color: var(--text);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.1s ease-out;
+  border: 1px solid var(--dark);
+  border-radius: 8px;
+}
+
+button:hover {
+  background: var(--light);
+}
+
+footer,
+a {
+  color: var(--dark);
 }
