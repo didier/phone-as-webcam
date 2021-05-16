@@ -49,7 +49,6 @@ button {
   gap: 0.25rem;
   grid-auto-flow: column;
   justify-items: start;
-  /* text-align: center; */
 }
 
 video {
