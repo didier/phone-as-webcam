@@ -48,11 +48,15 @@ function capture(camera) {
 /**
  * Cross-platform way to make a video enter fullscreen.
  */
-const enterFullScreen =
-  video.webkitEnterFullScreen ||
-  video.requestFullscreen ||
-  video.webkitRequestFullscreen ||
-  video.msRequestFullscreen;
+function enterFullScreen() {
+  const fullscreen =
+    video.webkitEnterFullScreen ||
+    video.requestFullscreen ||
+    video.webkitRequestFullscreen ||
+    video.msRequestFullscreen;
+
+  return fullscreen();
+}
 
 frontCamera.addEventListener('click', () => capture('front'));
 backCamera.addEventListener('click', () => capture('back'));
