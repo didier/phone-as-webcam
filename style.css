@@ -32,14 +32,18 @@ video {
   background: var(--neutral);
   padding: 0.5rem 1rem;
   border-radius: 8px;
-  /* margin-right: 0.25rem; */
-  /* margin-bottom: 0.25rem; */
   color: var(--text);
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.1s ease-out;
   border: 1px solid var(--dark);
   border-radius: 8px;
+}
+
+video {
+  overflow: hidden;
+  padding: 0;
+  object-fit: contain;
 }
 
 button:hover {
