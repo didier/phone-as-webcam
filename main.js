@@ -49,13 +49,18 @@ function capture(camera) {
  * Cross-platform way to make a video enter fullscreen.
  */
 function enterFullScreen() {
-  const fullscreen =
-    video.webkitEnterFullScreen ||
-    video.requestFullscreen ||
-    video.webkitRequestFullscreen ||
-    video.msRequestFullscreen;
-
-  return fullscreen();
+  if (video.webkitEnterFullScreen) {
+    // Mobile Safari
+    video.webkitEnterFullScreen();
+  } else if (video.requestFullscreen) {
+    video.requestFullscreen();
+  } else if (video.webkitRequestFullscreen) {
+    // Regular Safari
+    video.webkitRequestFullscreen();
+  } else if (video.msRequestFullscreen) {
+    // IE11 — I sincerely hope you don't own a phone running IE11...
+    video.msRequestFullscreen();
+  }
 }
 
 frontCamera.addEventListener('click', () => capture('front'));
