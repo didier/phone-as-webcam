@@ -14,22 +14,34 @@
     />
   </head>
   <body>
-    <header>
-      <button class="back">↑ Capture back</button>
-      <button class="front">↓ Capture front</button>
-      <button class="fullscreen">⬒ Full screen</button>
-    </header>
-    <main>
-      <video autoplay muted playsinline>
-        If you're seeing this, your browser probably doesn't support HTML video.
-        That also means you probably haven't updated your browser or device in a
-        few years, meaning you're an easy target for hacking. Update now.
-      </video>
-    </main>
+    <div>
+      <header>
+        <button class="back">
+          <p>↑</p>
+          <p>Capture back</p>
+        </button>
+        <button class="front">
+          <p>↓</p>
+          <p>Capture front</p>
+        </button>
+        <button class="fullscreen">
+          <p>⬒</p>
+          <p>Enter full screen</p>
+        </button>
+      </header>
+      <main>
+        <video autoplay muted playsinline>
+          If you're seeing this, your browser probably doesn't support HTML
+          video. That also means you probably haven't updated your browser or
+          device in a few years, meaning you're an easy target for hacking.
+          Update now.
+        </video>
+      </main>
 
-    <footer>
-      <p>Created with 📷️ by <a href="http://didier.cz/g">Didier Catz</a></p>
-    </footer>
+      <footer>
+        <p>Created with 📷️ by <a href="http://didier.cz/g">Didier Catz</a></p>
+      </footer>
+    </div>
 
     <script type="module" src="/main.js" async defer></script>
   </body>
