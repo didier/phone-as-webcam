@@ -61,7 +61,32 @@ button:hover {
   background: var(--light);
 }
 
-footer,
-a {
+footer {
   color: var(--dark);
+  text-align: center;
+}
+
+a,
+a:visited {
+  color: currentColor;
+}
+
+details {
+  text-align: left;
+  max-width: 100%;
+  color: var(--text);
+  padding: 2rem;
+  text-align: left;
+}
+
+article {
+  max-width: 66ch;
+  display: grid;
+  padding-top: 2rem;
+  grid-gap: 1rem;
+}
+
+p,
+li {
+  line-height: 1.5;
 }
